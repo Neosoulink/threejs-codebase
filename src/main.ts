@@ -1,3 +1,4 @@
 import './assets/css/style.css';
+import InitThreeJs from './helpers/InitThreeJs';
 
-const app = document.querySelector<HTMLDivElement>('#app')!
+InitThreeJs();
