@@ -3,11 +3,11 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 
 // IMGS SKIN SKYBOX
 import img_texture_ft from "../assets/img/box-inner-skin/arid2_ft.jpg";
-import img_texture_bk from "../assets/img/box-inner-skin/arid2_ft.jpg";
-import img_texture_up from "../assets/img/box-inner-skin/arid2_ft.jpg";
-import img_texture_dn from "../assets/img/box-inner-skin/arid2_ft.jpg";
-import img_texture_rt from "../assets/img/box-inner-skin/arid2_ft.jpg";
-import img_texture_lf from "../assets/img/box-inner-skin/arid2_ft.jpg";
+import img_texture_bk from "../assets/img/box-inner-skin/arid2_bk.jpg";
+import img_texture_up from "../assets/img/box-inner-skin/arid2_up.jpg";
+import img_texture_dn from "../assets/img/box-inner-skin/arid2_dn.jpg";
+import img_texture_rt from "../assets/img/box-inner-skin/arid2_rt.jpg";
+import img_texture_lf from "../assets/img/box-inner-skin/arid2_lf.jpg";
 
 // DEFS
 let scene: THREE.Scene;
@@ -56,6 +56,8 @@ export default () => {
 	materialArray.push(new THREE.MeshBasicMaterial({ map: texture_dn }));
 	materialArray.push(new THREE.MeshBasicMaterial({ map: texture_rt }));
 	materialArray.push(new THREE.MeshBasicMaterial({ map: texture_lf }));
+
+	for (let i = 0; i < 6; i++) materialArray[i].side = THREE.BackSide;
 
 	// BOX GEOMETRY
 	const skyboxGeo = new THREE.BoxGeometry(10000, 10000, 10000);
