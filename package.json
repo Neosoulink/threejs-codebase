@@ -1,6 +1,6 @@
 {
-  "name": "skybox",
-  "version": "0.0.0",
+  "name": "threejs-codebase",
+  "version": "0.0.1",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
