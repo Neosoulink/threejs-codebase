@@ -24,7 +24,7 @@ export default () => {
 		1000
 	);
 
-	renderer = new THREE.WebGLRenderer({ antialias: true });
+	renderer = new THREE.WebGL1Renderer({ antialias: true });
 	renderer.setSize(window.innerWidth, window.innerHeight);
 
 	app.appendChild(renderer.domElement);
