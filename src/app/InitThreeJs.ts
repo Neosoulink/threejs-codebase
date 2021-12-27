@@ -30,6 +30,7 @@ export default () => {
 	app.appendChild(renderer.domElement);
 
 	// ORBIT CONTROL
+	// @ts-ignore: Will used in the future
 	const orbitControls = new OrbitControls(camera, renderer.domElement);
 
 	// ANIMATION LOOP
